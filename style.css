@@ -3,9 +3,52 @@
     padding: 0;
     margin: 0;
 }
+body{
+    color: #222;
+    padding-bottom: 50px;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background:#222;
+}
+.nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.nav ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+.nav a{
+    color: azure;
+    text-decoration: none;
+    padding: 15px;
+}
+.nav a:hover{
+    color:tomato;
+}
+.cover{
+    background: url(https://i.pinimg.com/originals/92/ef/ab/92efab7444f976be70a1a124f807669a.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 20px;
+}
+
 .gallery{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
 }
 .img_container img{
     width: 100%;
